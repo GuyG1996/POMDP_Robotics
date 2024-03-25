@@ -1,0 +1,1270 @@
+killing /skills_server_node
+killed
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'init_env', 'black', 'red', 'green', 'blue']
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'pick', 'green']
+green
+delete:green
+before adding
+added:green
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'place', 'green', '4']
+place:green 4
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'pick', 'black']
+black
+delete:black
+before adding
+added:black
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'place', 'black', '4']
+place:black 4
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'pick', 'red']
+red
+delete:red
+before adding
+added:red
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'place', 'red', '4']
+place:red 4
+[WARN] [1710331584.308776, 202.770000]: GAME OVER!
+[INFO] [1710331522.057721, 0.000000]: checking if all the balls are at the baby or we did all of our steps
+{'green': [0.1, 0.05, 0.8, 0.05], 'blue': [0.7, 0.1, 0.1, 0.1], 'black': [0.25, 0.25, 0.25, 0.25], 'red': [0.25, 0.25, 0.25, 0.25]}
+[INFO] [1710331539.779574, 72.250000]: Picking up toy of type green completed with success: True
+[INFO] [1710331549.511472, 102.040000]: Placing toy completed with success: True
+{'green': [0, 0, 0, 0], 'blue': [0.7333333333333333, 0.13333333333333333, 0, 0.13333333333333333], 'black': [0.3333333333333333, 0.3333333333333333, 0, 0.3333333333333333], 'red': [0.3333333333333333, 0.3333333333333333, 0, 0.3333333333333333]}
+[INFO] [1710331554.800635, 118.060000]: Picking up toy of type blue completed with success: False
+[INFO] [1710331559.159478, 129.090000]: Picking up toy of type black completed with success: True
+[INFO] [1710331569.116423, 155.460000]: Placing toy completed with success: True
+{'green': [0, 0, 0, 0], 'blue': [0, 0.49999999999999994, 0, 0.49999999999999994], 'black': [0, 0, 0, 0], 'red': [0, 0.5, 0, 0.5]}
+[INFO] [1710331576.813179, 181.600000]: Picking up toy of type red completed with success: True
+[INFO] [1710331584.305734, 202.770000]: Placing toy completed with success: True
+killing /skills_server_node
+killed
+starting skills server node
+Ready to navigate.
+Ready to pick.
+Ready to place.
+actions: 
+[]
+rewards:
+{'green': 40, 'blue': 20, 'black': 15, 'red': 15}
+init environment with objects, running:"rosrun task3_env environment_functions.py init_env black red green blue"
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(2) == req.location(2)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 2), observation:success: True, reward:-1
+total rewards:-1
+handle_pick
+toy_type: "green"
+rosrun task3_env environment_functions.py pick green
+state_holding_object_name:green
+listed- action-('pick', toy_type: "green"), observation:success: True, reward:-1
+total rewards:-2
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green")]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(4) == req.location(4)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 4), observation:success: True, reward:-1
+total rewards:-3
+state_holding_object_name:green
+state_robot_location:4
+handle_place
+
+rosrun task3_env environment_functions.py place green 4
+listed- action-('place', ), observation:success: True, reward:40
+total rewards:37
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', )]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(0) == req.location(0)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 0), observation:success: True, reward:-1
+total rewards:36
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 0)]
+sampled navigate real obs:True
+sampled navigate succ:False
+state_robot_location(0) == req.location(0)
+navigate to self location: failed
+success:False, obs_noise:False,response:False
+listed- action-('navigate', location: 0), observation:success: False, reward:-2
+total rewards:34
+handle_pick
+toy_type: "blue"
+state_holding_object_name:None
+listed- action-('pick', toy_type: "blue"), observation:success: False, reward:-2
+total rewards:32
+handle_pick
+toy_type: "black"
+rosrun task3_env environment_functions.py pick black
+state_holding_object_name:black
+listed- action-('pick', toy_type: "black"), observation:success: True, reward:-1
+total rewards:31
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('pick', toy_type: "black")]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(4) == req.location(4)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 4), observation:success: True, reward:-1
+total rewards:30
+state_holding_object_name:black
+state_robot_location:4
+handle_place
+
+rosrun task3_env environment_functions.py place black 4
+listed- action-('place', ), observation:success: True, reward:15
+total rewards:45
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('pick', toy_type: "black"), ('navigate', location: 4), ('place', )]
+sampled navigate real obs:True
+sampled navigate succ:False
+state_robot_location(4) == req.location(1)
+success:False, obs_noise:False,response:False
+listed- action-('navigate', location: 1), observation:success: False, reward:-2
+total rewards:43
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('pick', toy_type: "black"), ('navigate', location: 4), ('place', ), ('navigate', location: 1)]
+sampled navigate real obs:False
+sampled navigate succ:True
+state_robot_location(1) == req.location(1)
+success:True, obs_noise:True,response:False
+listed- action-('navigate', location: 1), observation:success: False, reward:-1
+total rewards:42
+handle_pick
+toy_type: "red"
+rosrun task3_env environment_functions.py pick red
+state_holding_object_name:red
+listed- action-('pick', toy_type: "red"), observation:success: True, reward:-1
+total rewards:41
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('pick', toy_type: "black"), ('navigate', location: 4), ('place', ), ('navigate', location: 1), ('navigate', location: 1), ('pick', toy_type: "red")]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(4) == req.location(4)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 4), observation:success: True, reward:-1
+total rewards:40
+state_holding_object_name:red
+state_robot_location:4
+handle_place
+
+rosrun task3_env environment_functions.py place red 4
+listed- action-('place', ), observation:success: True, reward:15
+total rewards:55
+you used more than 6 picks, GAME OVER
+listed- action-('navigate', 'GAME-OVER'), observation:GAME-OVER, reward:0
+total rewards:55
+you used more than 6 picks, GAME OVER
+listed- action-('navigate', 'GAME-OVER'), observation:GAME-OVER, reward:0
+total rewards:55
+shutdown request: user request
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'init_env', 'blue', 'red', 'green', 'black']
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'pick', 'green']
+green
+delete:green
+before adding
+added:green
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'place', 'green', '4']
+place:green 4
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'pick', 'blue']
+blue
+delete:blue
+before adding
+added:blue
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'place', 'blue', '4']
+place:blue 4
+[WARN] [1710331652.644806, 412.240000]: GAME OVER!
+[INFO] [1710331590.749434, 0.000000]: checking if all the balls are at the baby or we did all of our steps
+{'green': [0.1, 0.05, 0.8, 0.05], 'blue': [0.7, 0.1, 0.1, 0.1], 'black': [0.25, 0.25, 0.25, 0.25], 'red': [0.25, 0.25, 0.25, 0.25]}
+[INFO] [1710331608.801870, 275.130000]: Picking up toy of type green completed with success: True
+[INFO] [1710331626.603245, 329.880000]: Placing toy completed with success: True
+{'green': [0, 0, 0, 0], 'blue': [0.7333333333333333, 0.13333333333333333, 0, 0.13333333333333333], 'black': [0.3333333333333333, 0.3333333333333333, 0, 0.3333333333333333], 'red': [0.3333333333333333, 0.3333333333333333, 0, 0.3333333333333333]}
+[INFO] [1710331636.006999, 360.360000]: Picking up toy of type blue completed with success: True
+[INFO] [1710331645.698675, 391.480000]: Placing toy completed with success: True
+{'green': [0, 0, 0, 0], 'blue': [0, 0, 0, 0], 'black': [0, 0.5, 0, 0.5], 'red': [0, 0.5, 0, 0.5]}
+starting skills server node
+Ready to navigate.
+Ready to pick.
+Ready to place.
+actions: 
+[]
+rewards:
+{'green': 40, 'blue': 20, 'black': 15, 'red': 15}
+init environment with objects, running:"rosrun task3_env environment_functions.py init_env blue red green black"
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(2) == req.location(2)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 2), observation:success: True, reward:-1
+total rewards:-1
+handle_pick
+toy_type: "green"
+rosrun task3_env environment_functions.py pick green
+state_holding_object_name:green
+listed- action-('pick', toy_type: "green"), observation:success: True, reward:-1
+total rewards:-2
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green")]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(4) == req.location(4)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 4), observation:success: True, reward:-1
+total rewards:-3
+state_holding_object_name:green
+state_robot_location:4
+handle_place
+
+rosrun task3_env environment_functions.py place green 4
+listed- action-('place', ), observation:success: True, reward:40
+total rewards:37
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', )]
+sampled navigate real obs:True
+sampled navigate succ:False
+state_robot_location(4) == req.location(0)
+success:False, obs_noise:False,response:False
+listed- action-('navigate', location: 0), observation:success: False, reward:-2
+total rewards:35
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 0)]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(0) == req.location(0)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 0), observation:success: True, reward:-1
+total rewards:34
+handle_pick
+toy_type: "blue"
+rosrun task3_env environment_functions.py pick blue
+state_holding_object_name:blue
+listed- action-('pick', toy_type: "blue"), observation:success: True, reward:-1
+total rewards:33
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue")]
+sampled navigate real obs:True
+sampled navigate succ:False
+state_robot_location(0) == req.location(4)
+success:False, obs_noise:False,response:False
+listed- action-('navigate', location: 4), observation:success: False, reward:-2
+total rewards:31
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('navigate', location: 4)]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(4) == req.location(4)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 4), observation:success: True, reward:-1
+total rewards:30
+state_holding_object_name:blue
+state_robot_location:4
+handle_place
+
+rosrun task3_env environment_functions.py place blue 4
+listed- action-('place', ), observation:success: True, reward:20
+total rewards:50
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('navigate', location: 4), ('navigate', location: 4), ('place', )]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(1) == req.location(1)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 1), observation:success: True, reward:-1
+total rewards:49
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('navigate', location: 4), ('navigate', location: 4), ('place', ), ('navigate', location: 1)]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(1) == req.location(1)
+navigate to self location: failed
+success:False, obs_noise:False,response:False
+listed- action-('navigate', location: 1), observation:success: False, reward:-2
+total rewards:47
+you used more than 6 picks, GAME OVER
+listed- action-('navigate', 'GAME-OVER'), observation:GAME-OVER, reward:0
+total rewards:47
+you used more than 6 picks, GAME OVER
+listed- action-('navigate', 'GAME-OVER'), observation:GAME-OVER, reward:0
+total rewards:47
+shutdown request: user request
+killing /skills_server_node
+killed
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'init_env', 'blue', 'black', 'green', 'red']
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'pick', 'green']
+green
+delete:green
+before adding
+added:green
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'place', 'green', '4']
+place:green 4
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'pick', 'blue']
+blue
+delete:blue
+before adding
+added:blue
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'place', 'blue', '4']
+place:blue 4
+[WARN] [1710331700.794020, 563.380000]: GAME OVER!
+[INFO] [1710331658.247591, 431.130000]: checking if all the balls are at the baby or we did all of our steps
+{'green': [0.1, 0.05, 0.8, 0.05], 'blue': [0.7, 0.1, 0.1, 0.1], 'black': [0.25, 0.25, 0.25, 0.25], 'red': [0.25, 0.25, 0.25, 0.25]}
+[INFO] [1710331674.801742, 481.180000]: Picking up toy of type green completed with success: True
+[INFO] [1710331684.139034, 509.610000]: Placing toy completed with success: True
+{'green': [0, 0, 0, 0], 'blue': [0.7333333333333333, 0.13333333333333333, 0, 0.13333333333333333], 'black': [0.3333333333333333, 0.3333333333333333, 0, 0.3333333333333333], 'red': [0.3333333333333333, 0.3333333333333333, 0, 0.3333333333333333]}
+[INFO] [1710331692.918330, 537.660000]: Picking up toy of type blue completed with success: True
+[INFO] [1710331700.756345, 563.330000]: Placing toy completed with success: True
+{'green': [0, 0, 0, 0], 'blue': [0, 0, 0, 0], 'black': [0, 0.5, 0, 0.5], 'red': [0, 0.5, 0, 0.5]}
+killing /skills_server_node
+killed
+starting skills server node
+Ready to navigate.
+Ready to pick.
+Ready to place.
+actions: 
+[]
+rewards:
+{'green': 40, 'blue': 20, 'black': 15, 'red': 15}
+init environment with objects, running:"rosrun task3_env environment_functions.py init_env blue black green red"
+sampled navigate real obs:True
+sampled navigate succ:False
+state_robot_location(4) == req.location(2)
+success:False, obs_noise:False,response:False
+listed- action-('navigate', location: 2), observation:success: False, reward:-2
+total rewards:-2
+actions: 
+[('navigate', location: 2)]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(2) == req.location(2)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 2), observation:success: True, reward:-1
+total rewards:-3
+handle_pick
+toy_type: "green"
+rosrun task3_env environment_functions.py pick green
+state_holding_object_name:green
+listed- action-('pick', toy_type: "green"), observation:success: True, reward:-1
+total rewards:-4
+actions: 
+[('navigate', location: 2), ('navigate', location: 2), ('pick', toy_type: "green")]
+sampled navigate real obs:False
+sampled navigate succ:True
+state_robot_location(4) == req.location(4)
+success:True, obs_noise:True,response:False
+listed- action-('navigate', location: 4), observation:success: False, reward:-1
+total rewards:-5
+actions: 
+[('navigate', location: 2), ('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4)]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(4) == req.location(4)
+navigate to self location: failed
+success:False, obs_noise:False,response:False
+listed- action-('navigate', location: 4), observation:success: False, reward:-2
+total rewards:-7
+state_holding_object_name:green
+state_robot_location:4
+handle_place
+
+rosrun task3_env environment_functions.py place green 4
+listed- action-('place', ), observation:success: True, reward:40
+total rewards:33
+actions: 
+[('navigate', location: 2), ('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('navigate', location: 4), ('place', )]
+sampled navigate real obs:True
+sampled navigate succ:False
+state_robot_location(4) == req.location(0)
+success:False, obs_noise:False,response:False
+listed- action-('navigate', location: 0), observation:success: False, reward:-2
+total rewards:31
+actions: 
+[('navigate', location: 2), ('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('navigate', location: 4), ('place', ), ('navigate', location: 0)]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(0) == req.location(0)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 0), observation:success: True, reward:-1
+total rewards:30
+handle_pick
+toy_type: "blue"
+rosrun task3_env environment_functions.py pick blue
+state_holding_object_name:blue
+listed- action-('pick', toy_type: "blue"), observation:success: True, reward:-1
+total rewards:29
+actions: 
+[('navigate', location: 2), ('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('navigate', location: 4), ('place', ), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue")]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(4) == req.location(4)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 4), observation:success: True, reward:-1
+total rewards:28
+state_holding_object_name:blue
+state_robot_location:4
+handle_place
+
+rosrun task3_env environment_functions.py place blue 4
+listed- action-('place', ), observation:success: True, reward:20
+total rewards:48
+actions: 
+[('navigate', location: 2), ('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('navigate', location: 4), ('place', ), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('navigate', location: 4), ('place', )]
+sampled navigate real obs:True
+sampled navigate succ:False
+state_robot_location(4) == req.location(1)
+success:False, obs_noise:False,response:False
+listed- action-('navigate', location: 1), observation:success: False, reward:-2
+total rewards:46
+you used more than 6 picks, GAME OVER
+listed- action-('navigate', 'GAME-OVER'), observation:GAME-OVER, reward:0
+total rewards:46
+you used more than 6 picks, GAME OVER
+listed- action-('navigate', 'GAME-OVER'), observation:GAME-OVER, reward:0
+total rewards:46
+shutdown request: user request
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'init_env', 'red', 'black', 'green', 'blue']
+[WARN] [1710331719.025755, 608.950000]: GAME OVER!
+[INFO] [1710331705.521422, 0.000000]: checking if all the balls are at the baby or we did all of our steps
+{'green': [0.1, 0.05, 0.8, 0.05], 'blue': [0.7, 0.1, 0.1, 0.1], 'black': [0.25, 0.25, 0.25, 0.25], 'red': [0.25, 0.25, 0.25, 0.25]}
+[INFO] [1710331712.598788, 590.160000]: Picking up toy of type green completed with success: False
+[INFO] [1710331712.629848, 590.220000]: Picking up toy of type black completed with success: False
+{'green': [0.33333333333333337, 0.2833333333333334, 0.1, 0.2833333333333334], 'blue': [0.7, 0.1, 0.1, 0.1], 'black': [0.3, 0.3, 0.1, 0.3], 'red': [0.25, 0.25, 0.25, 0.25]}
+[INFO] [1710331718.711690, 608.280000]: Picking up toy of type blue completed with success: False
+[INFO] [1710331718.768880, 608.510000]: Picking up toy of type green completed with success: False
+{'green': [0.1, 0.36111111111111116, 0.1777777777777778, 0.36111111111111116], 'blue': [0.1, 0.3, 0.3, 0.3], 'black': [0.3, 0.3, 0.1, 0.3], 'red': [0.25, 0.25, 0.25, 0.25]}
+[INFO] [1710331718.908731, 608.790000]: Picking up toy of type green completed with success: False
+[INFO] [1710331719.017737, 608.950000]: Picking up toy of type blue completed with success: False
+killing /skills_server_node
+killed
+starting skills server node
+Ready to navigate.
+Ready to pick.
+Ready to place.
+actions: 
+[]
+rewards:
+{'green': 15, 'blue': 20, 'black': 40, 'red': 15}
+init environment with objects, running:"rosrun task3_env environment_functions.py init_env red black green blue"
+sampled navigate real obs:False
+sampled navigate succ:False
+state_robot_location(4) == req.location(2)
+success:False, obs_noise:True,response:True
+listed- action-('navigate', location: 2), observation:success: True, reward:-2
+total rewards:-2
+handle_pick
+toy_type: "green"
+state_holding_object_name:None
+listed- action-('pick', toy_type: "green"), observation:success: False, reward:-2
+total rewards:-4
+handle_pick
+toy_type: "black"
+state_holding_object_name:None
+listed- action-('pick', toy_type: "black"), observation:success: False, reward:-2
+total rewards:-6
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('pick', toy_type: "black")]
+sampled navigate real obs:True
+sampled navigate succ:False
+state_robot_location(4) == req.location(0)
+success:False, obs_noise:False,response:False
+listed- action-('navigate', location: 0), observation:success: False, reward:-2
+total rewards:-8
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('pick', toy_type: "black"), ('navigate', location: 0)]
+sampled navigate real obs:False
+sampled navigate succ:True
+state_robot_location(0) == req.location(0)
+success:True, obs_noise:True,response:False
+listed- action-('navigate', location: 0), observation:success: False, reward:-1
+total rewards:-9
+handle_pick
+toy_type: "blue"
+state_holding_object_name:None
+listed- action-('pick', toy_type: "blue"), observation:success: False, reward:-2
+total rewards:-11
+handle_pick
+toy_type: "green"
+state_holding_object_name:None
+listed- action-('pick', toy_type: "green"), observation:success: False, reward:-2
+total rewards:-13
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('pick', toy_type: "black"), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('pick', toy_type: "green")]
+sampled navigate real obs:True
+sampled navigate succ:False
+state_robot_location(0) == req.location(1)
+success:False, obs_noise:False,response:False
+listed- action-('navigate', location: 1), observation:success: False, reward:-2
+total rewards:-15
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('pick', toy_type: "black"), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('pick', toy_type: "green"), ('navigate', location: 1)]
+sampled navigate real obs:True
+sampled navigate succ:False
+state_robot_location(0) == req.location(1)
+success:False, obs_noise:False,response:False
+listed- action-('navigate', location: 1), observation:success: False, reward:-2
+total rewards:-17
+handle_pick
+toy_type: "green"
+state_holding_object_name:None
+listed- action-('pick', toy_type: "green"), observation:success: False, reward:-2
+total rewards:-19
+handle_pick
+toy_type: "blue"
+state_holding_object_name:None
+listed- action-('pick', toy_type: "blue"), observation:success: False, reward:-2
+total rewards:-21
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('pick', toy_type: "black"), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('pick', toy_type: "green"), ('navigate', location: 1), ('navigate', location: 1), ('pick', toy_type: "green"), ('pick', toy_type: "blue")]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(4) == req.location(4)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 4), observation:success: True, reward:-1
+total rewards:-22
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('pick', toy_type: "black"), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('pick', toy_type: "green"), ('navigate', location: 1), ('navigate', location: 1), ('pick', toy_type: "green"), ('pick', toy_type: "blue"), ('navigate', location: 4)]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(4) == req.location(4)
+navigate to self location: failed
+success:False, obs_noise:False,response:False
+listed- action-('navigate', location: 4), observation:success: False, reward:-2
+total rewards:-24
+shutdown request: user request
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'init_env', 'blue', 'black', 'green', 'red']
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'pick', 'green']
+green
+delete:green
+before adding
+added:green
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'place', 'green', '4']
+place:green 4
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'pick', 'blue']
+blue
+delete:blue
+before adding
+added:blue
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'place', 'blue', '4']
+place:blue 4
+[WARN] [1710331776.776032, 780.870000]: GAME OVER!
+[INFO] [1710331729.383261, 0.000000]: checking if all the balls are at the baby or we did all of our steps
+{'green': [0.1, 0.05, 0.8, 0.05], 'blue': [0.7, 0.1, 0.1, 0.1], 'black': [0.25, 0.25, 0.25, 0.25], 'red': [0.25, 0.25, 0.25, 0.25]}
+[INFO] [1710331747.174864, 695.220000]: Picking up toy of type green completed with success: True
+[INFO] [1710331754.517797, 714.850000]: Placing toy completed with success: True
+{'green': [0, 0, 0, 0], 'blue': [0.7333333333333333, 0.13333333333333333, 0, 0.13333333333333333], 'black': [0.3333333333333333, 0.3333333333333333, 0, 0.3333333333333333], 'red': [0.3333333333333333, 0.3333333333333333, 0, 0.3333333333333333]}
+[INFO] [1710331764.087516, 742.740000]: Picking up toy of type blue completed with success: True
+[INFO] [1710331772.533153, 769.250000]: Placing toy completed with success: True
+{'green': [0, 0, 0, 0], 'blue': [0, 0, 0, 0], 'black': [0, 0.5, 0, 0.5], 'red': [0, 0.5, 0, 0.5]}
+killing /skills_server_node
+killed
+starting skills server node
+Ready to navigate.
+Ready to pick.
+Ready to place.
+actions: 
+[]
+rewards:
+{'green': 40, 'blue': 15, 'black': 20, 'red': 15}
+init environment with objects, running:"rosrun task3_env environment_functions.py init_env blue black green red"
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(2) == req.location(2)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 2), observation:success: True, reward:-1
+total rewards:-1
+handle_pick
+toy_type: "green"
+rosrun task3_env environment_functions.py pick green
+state_holding_object_name:green
+listed- action-('pick', toy_type: "green"), observation:success: True, reward:-1
+total rewards:-2
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green")]
+sampled navigate real obs:True
+sampled navigate succ:False
+state_robot_location(2) == req.location(4)
+success:False, obs_noise:False,response:False
+listed- action-('navigate', location: 4), observation:success: False, reward:-2
+total rewards:-4
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4)]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(4) == req.location(4)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 4), observation:success: True, reward:-1
+total rewards:-5
+state_holding_object_name:green
+state_robot_location:4
+handle_place
+
+rosrun task3_env environment_functions.py place green 4
+listed- action-('place', ), observation:success: True, reward:40
+total rewards:35
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('navigate', location: 4), ('place', )]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(0) == req.location(0)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 0), observation:success: True, reward:-1
+total rewards:34
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('navigate', location: 4), ('place', ), ('navigate', location: 0)]
+sampled navigate real obs:True
+sampled navigate succ:False
+state_robot_location(0) == req.location(0)
+navigate to self location: failed
+success:False, obs_noise:False,response:False
+listed- action-('navigate', location: 0), observation:success: False, reward:-2
+total rewards:32
+handle_pick
+toy_type: "blue"
+rosrun task3_env environment_functions.py pick blue
+state_holding_object_name:blue
+listed- action-('pick', toy_type: "blue"), observation:success: True, reward:-1
+total rewards:31
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('navigate', location: 4), ('place', ), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue")]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(4) == req.location(4)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 4), observation:success: True, reward:-1
+total rewards:30
+state_holding_object_name:blue
+state_robot_location:4
+handle_place
+
+rosrun task3_env environment_functions.py place blue 4
+listed- action-('place', ), observation:success: True, reward:15
+total rewards:45
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('navigate', location: 4), ('place', ), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('navigate', location: 4), ('place', )]
+sampled navigate real obs:True
+sampled navigate succ:False
+state_robot_location(4) == req.location(1)
+success:False, obs_noise:False,response:False
+listed- action-('navigate', location: 1), observation:success: False, reward:-2
+total rewards:43
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('navigate', location: 4), ('place', ), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('navigate', location: 4), ('place', ), ('navigate', location: 1)]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(1) == req.location(1)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 1), observation:success: True, reward:-1
+total rewards:42
+you used more than 6 picks, GAME OVER
+listed- action-('navigate', 'GAME-OVER'), observation:GAME-OVER, reward:0
+total rewards:42
+you used more than 6 picks, GAME OVER
+listed- action-('navigate', 'GAME-OVER'), observation:GAME-OVER, reward:0
+total rewards:42
+shutdown request: user request
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'init_env', 'blue', 'red', 'green', 'black']
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'pick', 'green']
+green
+delete:green
+before adding
+added:green
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'place', 'green', '4']
+place:green 4
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'pick', 'blue']
+blue
+delete:blue
+before adding
+added:blue
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'place', 'blue', '4']
+place:blue 4
+[WARN] [1710331838.140676, 966.330000]: GAME OVER!
+[INFO] [1710331782.478357, 0.000000]: checking if all the balls are at the baby or we did all of our steps
+{'green': [0.1, 0.05, 0.8, 0.05], 'blue': [0.7, 0.1, 0.1, 0.1], 'black': [0.25, 0.25, 0.25, 0.25], 'red': [0.25, 0.25, 0.25, 0.25]}
+[INFO] [1710331799.654477, 844.880000]: Picking up toy of type green completed with success: True
+[INFO] [1710331818.676696, 907.650000]: Placing toy completed with success: True
+{'green': [0, 0, 0, 0], 'blue': [0.7333333333333333, 0.13333333333333333, 0, 0.13333333333333333], 'black': [0.3333333333333333, 0.3333333333333333, 0, 0.3333333333333333], 'red': [0.3333333333333333, 0.3333333333333333, 0, 0.3333333333333333]}
+[INFO] [1710331826.746485, 932.020000]: Picking up toy of type blue completed with success: True
+[INFO] [1710331834.060200, 953.330000]: Placing toy completed with success: True
+{'green': [0, 0, 0, 0], 'blue': [0, 0, 0, 0], 'black': [0, 0.5, 0, 0.5], 'red': [0, 0.5, 0, 0.5]}
+starting skills server node
+Ready to navigate.
+Ready to pick.
+Ready to place.
+actions: 
+[]
+rewards:
+{'green': 40, 'blue': 20, 'black': 15, 'red': 15}
+init environment with objects, running:"rosrun task3_env environment_functions.py init_env blue red green black"
+sampled navigate real obs:False
+sampled navigate succ:True
+state_robot_location(2) == req.location(2)
+success:True, obs_noise:True,response:False
+listed- action-('navigate', location: 2), observation:success: False, reward:-1
+total rewards:-1
+actions: 
+[('navigate', location: 2)]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(2) == req.location(2)
+navigate to self location: failed
+success:False, obs_noise:False,response:False
+listed- action-('navigate', location: 2), observation:success: False, reward:-2
+total rewards:-3
+handle_pick
+toy_type: "green"
+rosrun task3_env environment_functions.py pick green
+state_holding_object_name:green
+listed- action-('pick', toy_type: "green"), observation:success: True, reward:-1
+total rewards:-4
+actions: 
+[('navigate', location: 2), ('navigate', location: 2), ('pick', toy_type: "green")]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(4) == req.location(4)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 4), observation:success: True, reward:-1
+total rewards:-5
+state_holding_object_name:green
+state_robot_location:4
+handle_place
+
+rosrun task3_env environment_functions.py place green 4
+listed- action-('place', ), observation:success: True, reward:40
+total rewards:35
+actions: 
+[('navigate', location: 2), ('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', )]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(0) == req.location(0)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 0), observation:success: True, reward:-1
+total rewards:34
+actions: 
+[('navigate', location: 2), ('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 0)]
+sampled navigate real obs:True
+sampled navigate succ:False
+state_robot_location(0) == req.location(0)
+navigate to self location: failed
+success:False, obs_noise:False,response:False
+listed- action-('navigate', location: 0), observation:success: False, reward:-2
+total rewards:32
+handle_pick
+toy_type: "blue"
+rosrun task3_env environment_functions.py pick blue
+state_holding_object_name:blue
+listed- action-('pick', toy_type: "blue"), observation:success: True, reward:-1
+total rewards:31
+actions: 
+[('navigate', location: 2), ('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue")]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(4) == req.location(4)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 4), observation:success: True, reward:-1
+total rewards:30
+state_holding_object_name:blue
+state_robot_location:4
+handle_place
+
+rosrun task3_env environment_functions.py place blue 4
+listed- action-('place', ), observation:success: True, reward:20
+total rewards:50
+actions: 
+[('navigate', location: 2), ('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('navigate', location: 4), ('place', )]
+sampled navigate real obs:False
+sampled navigate succ:False
+state_robot_location(4) == req.location(1)
+success:False, obs_noise:True,response:True
+listed- action-('navigate', location: 1), observation:success: True, reward:-2
+total rewards:48
+actions: 
+[('navigate', location: 2), ('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('navigate', location: 4), ('place', ), ('navigate', location: 1)]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(1) == req.location(1)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 1), observation:success: True, reward:-1
+total rewards:47
+you used more than 6 picks, GAME OVER
+listed- action-('navigate', 'GAME-OVER'), observation:GAME-OVER, reward:0
+total rewards:47
+you used more than 6 picks, GAME OVER
+listed- action-('navigate', 'GAME-OVER'), observation:GAME-OVER, reward:0
+total rewards:47
+shutdown request: user request
+killing /skills_server_node
+killed
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'init_env', 'blue', 'black', 'green', 'red']
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'pick', 'green']
+green
+delete:green
+before adding
+added:green
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'place', 'green', '4']
+place:green 4
+[WARN] [1710331874.311126, 1069.210000]: GAME OVER!
+[INFO] [1710331843.418523, 0.000000]: checking if all the balls are at the baby or we did all of our steps
+{'green': [0.1, 0.05, 0.8, 0.05], 'blue': [0.7, 0.1, 0.1, 0.1], 'black': [0.25, 0.25, 0.25, 0.25], 'red': [0.25, 0.25, 0.25, 0.25]}
+[INFO] [1710331861.395314, 1031.320000]: Picking up toy of type green completed with success: True
+[INFO] [1710331870.206801, 1055.050000]: Placing toy completed with success: True
+{'green': [0, 0, 0, 0], 'blue': [0.7333333333333333, 0.13333333333333333, 0, 0.13333333333333333], 'black': [0.3333333333333333, 0.3333333333333333, 0, 0.3333333333333333], 'red': [0.3333333333333333, 0.3333333333333333, 0, 0.3333333333333333]}
+[INFO] [1710331870.328783, 1055.280000]: Picking up toy of type blue completed with success: False
+[INFO] [1710331870.363078, 1055.440000]: Picking up toy of type black completed with success: False
+{'green': [0, 0, 0, 0], 'blue': [0.1, 0.44999999999999996, 0, 0.44999999999999996], 'black': [0.1, 0.44999999999999996, 0, 0.44999999999999996], 'red': [0.3333333333333333, 0.3333333333333333, 0, 0.3333333333333333]}
+[INFO] [1710331870.433036, 1055.690000]: Picking up toy of type blue completed with success: False
+[INFO] [1710331870.502604, 1056.210000]: Picking up toy of type black completed with success: False
+{'green': [0, 0, 0, 0], 'blue': [0.275, 0.1, 0, 0.625], 'black': [0.275, 0.1, 0, 0.625], 'red': [0.3333333333333333, 0.3333333333333333, 0, 0.3333333333333333]}
+[INFO] [1710331874.307697, 1069.210000]: Picking up toy of type blue completed with success: False
+killing /skills_server_node
+killed
+starting skills server node
+Ready to navigate.
+Ready to pick.
+Ready to place.
+actions: 
+[]
+rewards:
+{'green': 40, 'blue': 20, 'black': 15, 'red': 15}
+init environment with objects, running:"rosrun task3_env environment_functions.py init_env blue black green red"
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(2) == req.location(2)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 2), observation:success: True, reward:-1
+total rewards:-1
+handle_pick
+toy_type: "green"
+rosrun task3_env environment_functions.py pick green
+state_holding_object_name:green
+listed- action-('pick', toy_type: "green"), observation:success: True, reward:-1
+total rewards:-2
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green")]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(4) == req.location(4)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 4), observation:success: True, reward:-1
+total rewards:-3
+state_holding_object_name:green
+state_robot_location:4
+handle_place
+
+rosrun task3_env environment_functions.py place green 4
+listed- action-('place', ), observation:success: True, reward:40
+total rewards:37
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', )]
+sampled navigate real obs:True
+sampled navigate succ:False
+state_robot_location(4) == req.location(0)
+success:False, obs_noise:False,response:False
+listed- action-('navigate', location: 0), observation:success: False, reward:-2
+total rewards:35
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 0)]
+sampled navigate real obs:True
+sampled navigate succ:False
+state_robot_location(4) == req.location(0)
+success:False, obs_noise:False,response:False
+listed- action-('navigate', location: 0), observation:success: False, reward:-2
+total rewards:33
+handle_pick
+toy_type: "blue"
+state_holding_object_name:None
+listed- action-('pick', toy_type: "blue"), observation:success: False, reward:-2
+total rewards:31
+handle_pick
+toy_type: "black"
+state_holding_object_name:None
+listed- action-('pick', toy_type: "black"), observation:success: False, reward:-2
+total rewards:29
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('pick', toy_type: "black")]
+sampled navigate real obs:False
+sampled navigate succ:False
+state_robot_location(4) == req.location(1)
+success:False, obs_noise:True,response:True
+listed- action-('navigate', location: 1), observation:success: True, reward:-2
+total rewards:27
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('pick', toy_type: "black"), ('navigate', location: 1)]
+sampled navigate real obs:True
+sampled navigate succ:False
+state_robot_location(4) == req.location(1)
+success:False, obs_noise:False,response:False
+listed- action-('navigate', location: 1), observation:success: False, reward:-2
+total rewards:25
+handle_pick
+toy_type: "blue"
+state_holding_object_name:None
+listed- action-('pick', toy_type: "blue"), observation:success: False, reward:-2
+total rewards:23
+handle_pick
+toy_type: "black"
+state_holding_object_name:None
+listed- action-('pick', toy_type: "black"), observation:success: False, reward:-2
+total rewards:21
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('pick', toy_type: "black"), ('navigate', location: 1), ('navigate', location: 1), ('pick', toy_type: "blue"), ('pick', toy_type: "black")]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(3) == req.location(3)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 3), observation:success: True, reward:-1
+total rewards:20
+handle_pick
+toy_type: "blue"
+state_holding_object_name:None
+listed- action-('pick', toy_type: "blue"), observation:success: False, reward:-2
+total rewards:18
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('pick', toy_type: "black"), ('navigate', location: 1), ('navigate', location: 1), ('pick', toy_type: "blue"), ('pick', toy_type: "black"), ('navigate', location: 3), ('pick', toy_type: "blue")]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(4) == req.location(4)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 4), observation:success: True, reward:-1
+total rewards:17
+you used more than 6 picks, GAME OVER
+listed- action-('navigate', 'GAME-OVER'), observation:GAME-OVER, reward:0
+total rewards:17
+shutdown request: user request
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'init_env', 'blue', 'red', 'green', 'black']
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'pick', 'green']
+green
+delete:green
+before adding
+added:green
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'place', 'green', '4']
+place:green 4
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'pick', 'blue']
+blue
+delete:blue
+before adding
+added:blue
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'place', 'blue', '4']
+place:blue 4
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'pick', 'red']
+red
+delete:red
+before adding
+added:red
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'place', 'red', '4']
+place:red 4
+[WARN] [1710331956.109825, 1313.140000]: GAME OVER!
+[INFO] [1710331887.694325, 1109.280000]: checking if all the balls are at the baby or we did all of our steps
+{'green': [0.1, 0.05, 0.8, 0.05], 'blue': [0.7, 0.1, 0.1, 0.1], 'black': [0.25, 0.25, 0.25, 0.25], 'red': [0.25, 0.25, 0.25, 0.25]}
+[INFO] [1710331905.960636, 1162.680000]: Picking up toy of type green completed with success: True
+[INFO] [1710331916.283818, 1192.570000]: Placing toy completed with success: True
+{'green': [0, 0, 0, 0], 'blue': [0.7333333333333333, 0.13333333333333333, 0, 0.13333333333333333], 'black': [0.3333333333333333, 0.3333333333333333, 0, 0.3333333333333333], 'red': [0.3333333333333333, 0.3333333333333333, 0, 0.3333333333333333]}
+[INFO] [1710331926.569094, 1224.090000]: Picking up toy of type blue completed with success: True
+[INFO] [1710331937.243466, 1258.170000]: Placing toy completed with success: True
+{'green': [0, 0, 0, 0], 'blue': [0, 0, 0, 0], 'black': [0, 0.5, 0, 0.5], 'red': [0, 0.5, 0, 0.5]}
+[INFO] [1710331941.693792, 1271.770000]: Picking up toy of type black completed with success: False
+[INFO] [1710331946.064112, 1284.750000]: Picking up toy of type red completed with success: True
+[INFO] [1710331956.104482, 1313.140000]: Placing toy completed with success: True
+killing /skills_server_node
+killed
+starting skills server node
+Ready to navigate.
+Ready to pick.
+Ready to place.
+actions: 
+[]
+rewards:
+{'green': 15, 'blue': 20, 'black': 40, 'red': 15}
+init environment with objects, running:"rosrun task3_env environment_functions.py init_env blue red green black"
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(2) == req.location(2)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 2), observation:success: True, reward:-1
+total rewards:-1
+handle_pick
+toy_type: "green"
+rosrun task3_env environment_functions.py pick green
+state_holding_object_name:green
+listed- action-('pick', toy_type: "green"), observation:success: True, reward:-1
+total rewards:-2
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green")]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(4) == req.location(4)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 4), observation:success: True, reward:-1
+total rewards:-3
+state_holding_object_name:green
+state_robot_location:4
+handle_place
+
+rosrun task3_env environment_functions.py place green 4
+listed- action-('place', ), observation:success: True, reward:15
+total rewards:12
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', )]
+sampled navigate real obs:True
+sampled navigate succ:False
+state_robot_location(4) == req.location(0)
+success:False, obs_noise:False,response:False
+listed- action-('navigate', location: 0), observation:success: False, reward:-2
+total rewards:10
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 0)]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(0) == req.location(0)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 0), observation:success: True, reward:-1
+total rewards:9
+handle_pick
+toy_type: "blue"
+rosrun task3_env environment_functions.py pick blue
+state_holding_object_name:blue
+listed- action-('pick', toy_type: "blue"), observation:success: True, reward:-1
+total rewards:8
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue")]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(4) == req.location(4)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 4), observation:success: True, reward:-1
+total rewards:7
+state_holding_object_name:blue
+state_robot_location:4
+handle_place
+
+rosrun task3_env environment_functions.py place blue 4
+listed- action-('place', ), observation:success: True, reward:20
+total rewards:27
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('navigate', location: 4), ('place', )]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(1) == req.location(1)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 1), observation:success: True, reward:-1
+total rewards:26
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('navigate', location: 4), ('place', ), ('navigate', location: 1)]
+sampled navigate real obs:False
+sampled navigate succ:True
+state_robot_location(1) == req.location(1)
+navigate to self location: failed
+success:False, obs_noise:True,response:True
+listed- action-('navigate', location: 1), observation:success: True, reward:-2
+total rewards:24
+handle_pick
+toy_type: "black"
+state_holding_object_name:None
+listed- action-('pick', toy_type: "black"), observation:success: False, reward:-2
+total rewards:22
+handle_pick
+toy_type: "red"
+rosrun task3_env environment_functions.py pick red
+state_holding_object_name:red
+listed- action-('pick', toy_type: "red"), observation:success: True, reward:-1
+total rewards:21
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('navigate', location: 4), ('place', ), ('navigate', location: 1), ('navigate', location: 1), ('pick', toy_type: "black"), ('pick', toy_type: "red")]
+sampled navigate real obs:False
+sampled navigate succ:True
+state_robot_location(4) == req.location(4)
+success:True, obs_noise:True,response:False
+listed- action-('navigate', location: 4), observation:success: False, reward:-1
+total rewards:20
+state_holding_object_name:red
+state_robot_location:4
+handle_place
+
+rosrun task3_env environment_functions.py place red 4
+listed- action-('place', ), observation:success: True, reward:15
+total rewards:35
+you used more than 6 picks, GAME OVER
+listed- action-('navigate', 'GAME-OVER'), observation:GAME-OVER, reward:0
+total rewards:35
+you used more than 6 picks, GAME OVER
+listed- action-('navigate', 'GAME-OVER'), observation:GAME-OVER, reward:0
+total rewards:35
+shutdown request: user request
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'init_env', 'green', 'black', 'red', 'blue']
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'pick', 'green']
+green
+delete:green
+before adding
+added:green
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'place', 'green', '4']
+place:green 4
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'pick', 'black']
+black
+delete:black
+before adding
+added:black
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'place', 'black', '4']
+place:black 4
+[WARN] [1710332022.602683, 1509.470000]: GAME OVER!
+[INFO] [1710331961.288717, 0.000000]: checking if all the balls are at the baby or we did all of our steps
+{'green': [0.1, 0.05, 0.8, 0.05], 'blue': [0.7, 0.1, 0.1, 0.1], 'black': [0.25, 0.25, 0.25, 0.25], 'red': [0.25, 0.25, 0.25, 0.25]}
+[INFO] [1710331975.739518, 1370.850000]: Picking up toy of type green completed with success: False
+[INFO] [1710331975.760313, 1370.890000]: Picking up toy of type black completed with success: False
+{'green': [0.33333333333333337, 0.2833333333333334, 0.1, 0.2833333333333334], 'blue': [0.7, 0.1, 0.1, 0.1], 'black': [0.3, 0.3, 0.1, 0.3], 'red': [0.25, 0.25, 0.25, 0.25]}
+[INFO] [1710331980.872445, 1385.570000]: Picking up toy of type blue completed with success: False
+[INFO] [1710331985.278681, 1399.510000]: Picking up toy of type green completed with success: True
+[INFO] [1710331995.039428, 1429.020000]: Placing toy completed with success: True
+{'green': [0, 0, 0, 0], 'blue': [0, 0.3333333333333333, 0.3333333333333333, 0.3333333333333333], 'black': [0, 0.39999999999999997, 0.2, 0.39999999999999997], 'red': [0, 0.3333333333333333, 0.3333333333333333, 0.3333333333333333]}
+[INFO] [1710332002.655874, 1452.210000]: Picking up toy of type black completed with success: True
+[INFO] [1710332014.651519, 1484.740000]: Placing toy completed with success: True
+{'green': [0, 0, 0, 0], 'blue': [0, 0, 0.5, 0.5], 'black': [0, 0, 0, 0], 'red': [0, 0, 0.5, 0.5]}
+killing /skills_server_node
+killed
+starting skills server node
+Ready to navigate.
+Ready to pick.
+Ready to place.
+actions: 
+[]
+rewards:
+{'green': 40, 'blue': 20, 'black': 15, 'red': 15}
+init environment with objects, running:"rosrun task3_env environment_functions.py init_env green black red blue"
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(2) == req.location(2)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 2), observation:success: True, reward:-1
+total rewards:-1
+handle_pick
+toy_type: "green"
+state_holding_object_name:None
+listed- action-('pick', toy_type: "green"), observation:success: False, reward:-2
+total rewards:-3
+handle_pick
+toy_type: "black"
+state_holding_object_name:None
+listed- action-('pick', toy_type: "black"), observation:success: False, reward:-2
+total rewards:-5
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('pick', toy_type: "black")]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(0) == req.location(0)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 0), observation:success: True, reward:-1
+total rewards:-6
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('pick', toy_type: "black"), ('navigate', location: 0)]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(0) == req.location(0)
+navigate to self location: failed
+success:False, obs_noise:False,response:False
+listed- action-('navigate', location: 0), observation:success: False, reward:-2
+total rewards:-8
+handle_pick
+toy_type: "blue"
+state_holding_object_name:None
+listed- action-('pick', toy_type: "blue"), observation:success: False, reward:-2
+total rewards:-10
+handle_pick
+toy_type: "green"
+rosrun task3_env environment_functions.py pick green
+state_holding_object_name:green
+listed- action-('pick', toy_type: "green"), observation:success: True, reward:-1
+total rewards:-11
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('pick', toy_type: "black"), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('pick', toy_type: "green")]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(4) == req.location(4)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 4), observation:success: True, reward:-1
+total rewards:-12
+state_holding_object_name:green
+state_robot_location:4
+handle_place
+
+rosrun task3_env environment_functions.py place green 4
+listed- action-('place', ), observation:success: True, reward:40
+total rewards:28
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('pick', toy_type: "black"), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', )]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(1) == req.location(1)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 1), observation:success: True, reward:-1
+total rewards:27
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('pick', toy_type: "black"), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 1)]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(1) == req.location(1)
+navigate to self location: failed
+success:False, obs_noise:False,response:False
+listed- action-('navigate', location: 1), observation:success: False, reward:-2
+total rewards:25
+handle_pick
+toy_type: "black"
+rosrun task3_env environment_functions.py pick black
+state_holding_object_name:black
+listed- action-('pick', toy_type: "black"), observation:success: True, reward:-1
+total rewards:24
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('pick', toy_type: "black"), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 1), ('navigate', location: 1), ('pick', toy_type: "black")]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(4) == req.location(4)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 4), observation:success: True, reward:-1
+total rewards:23
+state_holding_object_name:black
+state_robot_location:4
+handle_place
+
+rosrun task3_env environment_functions.py place black 4
+listed- action-('place', ), observation:success: True, reward:15
+total rewards:38
+actions: 
+[('navigate', location: 2), ('pick', toy_type: "green"), ('pick', toy_type: "black"), ('navigate', location: 0), ('navigate', location: 0), ('pick', toy_type: "blue"), ('pick', toy_type: "green"), ('navigate', location: 4), ('place', ), ('navigate', location: 1), ('navigate', location: 1), ('pick', toy_type: "black"), ('navigate', location: 4), ('place', )]
+sampled navigate real obs:True
+sampled navigate succ:True
+state_robot_location(2) == req.location(2)
+success:True, obs_noise:False,response:True
+listed- action-('navigate', location: 2), observation:success: True, reward:-1
+total rewards:37
+you used more than 6 picks, GAME OVER
+listed- action-('navigate', 'GAME-OVER'), observation:GAME-OVER, reward:0
+total rewards:37
+you used more than 6 picks, GAME OVER
+listed- action-('navigate', 'GAME-OVER'), observation:GAME-OVER, reward:0
+total rewards:37
+shutdown request: user request
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'init_env', 'red', 'black', 'green', 'blue']
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'pick', 'green']
+green
+delete:green
+before adding
+added:green
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'place', 'green', '4']
+place:green 4
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'pick', 'black']
+black
+delete:black
+before adding
+added:black
+------------------------- args:['/home/guy/catkin_ws/devel/lib/task3_env/environment_functions.py', 'place', 'black', '4']
+place:black 4
+[WARN] [1710332082.574934, 1683.630000]: GAME OVER!
+[INFO] [1710332029.262166, 0.000000]: checking if all the balls are at the baby or we did all of our steps
+{'green': [0.1, 0.05, 0.8, 0.05], 'blue': [0.7, 0.1, 0.1, 0.1], 'black': [0.25, 0.25, 0.25, 0.25], 'red': [0.25, 0.25, 0.25, 0.25]}
+[INFO] [1710332043.324394, 1568.520000]: Picking up toy of type green completed with success: True
+[INFO] [1710332050.564786, 1591.650000]: Placing toy completed with success: True
+{'green': [0, 0, 0, 0], 'blue': [0.7333333333333333, 0.13333333333333333, 0, 0.13333333333333333], 'black': [0.3333333333333333, 0.3333333333333333, 0, 0.3333333333333333], 'red': [0.3333333333333333, 0.3333333333333333, 0, 0.3333333333333333]}
+[INFO] [1710332054.296584, 1604.520000]: Picking up toy of type blue completed with success: False
+[INFO] [1710332054.322559, 1604.590000]: Picking up toy of type black completed with success: False
+{'green': [0, 0, 0, 0], 'blue': [0.1, 0.44999999999999996, 0, 0.44999999999999996], 'black': [0.1, 0.44999999999999996, 0, 0.44999999999999996], 'red': [0.3333333333333333, 0.3333333333333333, 0, 0.3333333333333333]}
+[INFO] [1710332057.828727, 1616.260000]: Picking up toy of type blue completed with success: False
+[INFO] [1710332063.151757, 1633.340000]: Picking up toy of type black completed with success: True
+[INFO] [1710332074.357656, 1663.490000]: Placing toy completed with success: True
+{'green': [0, 0, 0, 0], 'blue': [0.325, 0, 0, 0.675], 'black': [0, 0, 0, 0], 'red': [0.5, 0, 0, 0.5]}
+[WARN] [1710332084.124627, 1689.410000]: experiment over! 
