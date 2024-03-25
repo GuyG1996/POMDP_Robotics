@@ -1,0 +1,81 @@
+This is internal environment information not allowed for decision making only for debug
+
+state:[robot location:4, toys_location:{'green': 4, 'blue': 3, 'black': 4, 'red': 4}, toys_reward:{'green': 40, 'blue': 20, 'black': 15, 'red': 15},holding_toy:False]
+
+log:
+["listed- action-('navigate', location: 2), observation:success: True, reward:-1", 'listed- action-(\'pick\', toy_type: "green"), observation:success: True, reward:-1', "listed- action-('navigate', location: 4), observation:success: True, reward:-1", "listed- action-('place', ), observation:success: True, reward:40", "listed- action-('navigate', location: 0), observation:success: True, reward:-1", "listed- action-('navigate', location: 0), observation:success: False, reward:-2", 'listed- action-(\'pick\', toy_type: "blue"), observation:success: False, reward:-2', 'listed- action-(\'pick\', toy_type: "black"), observation:success: True, reward:-1', "listed- action-('navigate', location: 4), observation:success: True, reward:-1", "listed- action-('place', ), observation:success: True, reward:15", "listed- action-('navigate', location: 1), observation:success: False, reward:-2", "listed- action-('navigate', location: 1), observation:success: False, reward:-1", 'listed- action-(\'pick\', toy_type: "red"), observation:success: True, reward:-1', "listed- action-('navigate', location: 4), observation:success: True, reward:-1", "listed- action-('place', ), observation:success: True, reward:15"]
+
+total rewards:55
+This is internal environment information not allowed for decision making only for debug
+
+state:[robot location:1, toys_location:{'green': 4, 'blue': 4, 'black': 3, 'red': 1}, toys_reward:{'green': 40, 'blue': 20, 'black': 15, 'red': 15},holding_toy:False]
+
+log:
+["listed- action-('navigate', location: 2), observation:success: True, reward:-1", 'listed- action-(\'pick\', toy_type: "green"), observation:success: True, reward:-1', "listed- action-('navigate', location: 4), observation:success: True, reward:-1", "listed- action-('place', ), observation:success: True, reward:40", "listed- action-('navigate', location: 0), observation:success: False, reward:-2", "listed- action-('navigate', location: 0), observation:success: True, reward:-1", 'listed- action-(\'pick\', toy_type: "blue"), observation:success: True, reward:-1', "listed- action-('navigate', location: 4), observation:success: False, reward:-2", "listed- action-('navigate', location: 4), observation:success: True, reward:-1", "listed- action-('place', ), observation:success: True, reward:20", "listed- action-('navigate', location: 1), observation:success: True, reward:-1", "listed- action-('navigate', location: 1), observation:success: False, reward:-2"]
+
+total rewards:47
+This is internal environment information not allowed for decision making only for debug
+
+state:[robot location:4, toys_location:{'green': 4, 'blue': 4, 'black': 1, 'red': 3}, toys_reward:{'green': 40, 'blue': 20, 'black': 15, 'red': 15},holding_toy:False]
+
+log:
+["listed- action-('navigate', location: 2), observation:success: False, reward:-2", "listed- action-('navigate', location: 2), observation:success: True, reward:-1", 'listed- action-(\'pick\', toy_type: "green"), observation:success: True, reward:-1', "listed- action-('navigate', location: 4), observation:success: False, reward:-1", "listed- action-('navigate', location: 4), observation:success: False, reward:-2", "listed- action-('place', ), observation:success: True, reward:40", "listed- action-('navigate', location: 0), observation:success: False, reward:-2", "listed- action-('navigate', location: 0), observation:success: True, reward:-1", 'listed- action-(\'pick\', toy_type: "blue"), observation:success: True, reward:-1', "listed- action-('navigate', location: 4), observation:success: True, reward:-1", "listed- action-('place', ), observation:success: True, reward:20", "listed- action-('navigate', location: 1), observation:success: False, reward:-2"]
+
+total rewards:46
+This is internal environment information not allowed for decision making only for debug
+
+state:[robot location:0, toys_location:{'green': 2, 'blue': 3, 'black': 1, 'red': 0}, toys_reward:{'green': 15, 'blue': 20, 'black': 40, 'red': 15},holding_toy:False]
+
+log:
+["listed- action-('navigate', location: 2), observation:success: True, reward:-2", 'listed- action-(\'pick\', toy_type: "green"), observation:success: False, reward:-2', 'listed- action-(\'pick\', toy_type: "black"), observation:success: False, reward:-2', "listed- action-('navigate', location: 0), observation:success: False, reward:-2", "listed- action-('navigate', location: 0), observation:success: False, reward:-1", 'listed- action-(\'pick\', toy_type: "blue"), observation:success: False, reward:-2', 'listed- action-(\'pick\', toy_type: "green"), observation:success: False, reward:-2', "listed- action-('navigate', location: 1), observation:success: False, reward:-2", "listed- action-('navigate', location: 1), observation:success: False, reward:-2", 'listed- action-(\'pick\', toy_type: "green"), observation:success: False, reward:-2', 'listed- action-(\'pick\', toy_type: "blue"), observation:success: False, reward:-2']
+
+total rewards:-21
+This is internal environment information not allowed for decision making only for debug
+
+state:[robot location:1, toys_location:{'green': 4, 'blue': 4, 'black': 1, 'red': 3}, toys_reward:{'green': 40, 'blue': 15, 'black': 20, 'red': 15},holding_toy:False]
+
+log:
+["listed- action-('navigate', location: 2), observation:success: True, reward:-1", 'listed- action-(\'pick\', toy_type: "green"), observation:success: True, reward:-1', "listed- action-('navigate', location: 4), observation:success: False, reward:-2", "listed- action-('navigate', location: 4), observation:success: True, reward:-1", "listed- action-('place', ), observation:success: True, reward:40", "listed- action-('navigate', location: 0), observation:success: True, reward:-1", "listed- action-('navigate', location: 0), observation:success: False, reward:-2", 'listed- action-(\'pick\', toy_type: "blue"), observation:success: True, reward:-1', "listed- action-('navigate', location: 4), observation:success: True, reward:-1", "listed- action-('place', ), observation:success: True, reward:15", "listed- action-('navigate', location: 1), observation:success: False, reward:-2", "listed- action-('navigate', location: 1), observation:success: True, reward:-1"]
+
+total rewards:42
+This is internal environment information not allowed for decision making only for debug
+
+state:[robot location:1, toys_location:{'green': 4, 'blue': 4, 'black': 3, 'red': 1}, toys_reward:{'green': 40, 'blue': 20, 'black': 15, 'red': 15},holding_toy:False]
+
+log:
+["listed- action-('navigate', location: 2), observation:success: False, reward:-1", "listed- action-('navigate', location: 2), observation:success: False, reward:-2", 'listed- action-(\'pick\', toy_type: "green"), observation:success: True, reward:-1', "listed- action-('navigate', location: 4), observation:success: True, reward:-1", "listed- action-('place', ), observation:success: True, reward:40", "listed- action-('navigate', location: 0), observation:success: True, reward:-1", "listed- action-('navigate', location: 0), observation:success: False, reward:-2", 'listed- action-(\'pick\', toy_type: "blue"), observation:success: True, reward:-1', "listed- action-('navigate', location: 4), observation:success: True, reward:-1", "listed- action-('place', ), observation:success: True, reward:20", "listed- action-('navigate', location: 1), observation:success: True, reward:-2", "listed- action-('navigate', location: 1), observation:success: True, reward:-1"]
+
+total rewards:47
+This is internal environment information not allowed for decision making only for debug
+
+state:[robot location:3, toys_location:{'green': 4, 'blue': 0, 'black': 1, 'red': 3}, toys_reward:{'green': 40, 'blue': 20, 'black': 15, 'red': 15},holding_toy:False]
+
+log:
+["listed- action-('navigate', location: 2), observation:success: True, reward:-1", 'listed- action-(\'pick\', toy_type: "green"), observation:success: True, reward:-1', "listed- action-('navigate', location: 4), observation:success: True, reward:-1", "listed- action-('place', ), observation:success: True, reward:40", "listed- action-('navigate', location: 0), observation:success: False, reward:-2", "listed- action-('navigate', location: 0), observation:success: False, reward:-2", 'listed- action-(\'pick\', toy_type: "blue"), observation:success: False, reward:-2', 'listed- action-(\'pick\', toy_type: "black"), observation:success: False, reward:-2', "listed- action-('navigate', location: 1), observation:success: True, reward:-2", "listed- action-('navigate', location: 1), observation:success: False, reward:-2", 'listed- action-(\'pick\', toy_type: "blue"), observation:success: False, reward:-2', 'listed- action-(\'pick\', toy_type: "black"), observation:success: False, reward:-2', "listed- action-('navigate', location: 3), observation:success: True, reward:-1", 'listed- action-(\'pick\', toy_type: "blue"), observation:success: False, reward:-2']
+
+total rewards:18
+This is internal environment information not allowed for decision making only for debug
+
+state:[robot location:4, toys_location:{'green': 4, 'blue': 4, 'black': 3, 'red': 4}, toys_reward:{'green': 15, 'blue': 20, 'black': 40, 'red': 15},holding_toy:False]
+
+log:
+["listed- action-('navigate', location: 2), observation:success: True, reward:-1", 'listed- action-(\'pick\', toy_type: "green"), observation:success: True, reward:-1', "listed- action-('navigate', location: 4), observation:success: True, reward:-1", "listed- action-('place', ), observation:success: True, reward:15", "listed- action-('navigate', location: 0), observation:success: False, reward:-2", "listed- action-('navigate', location: 0), observation:success: True, reward:-1", 'listed- action-(\'pick\', toy_type: "blue"), observation:success: True, reward:-1', "listed- action-('navigate', location: 4), observation:success: True, reward:-1", "listed- action-('place', ), observation:success: True, reward:20", "listed- action-('navigate', location: 1), observation:success: True, reward:-1", "listed- action-('navigate', location: 1), observation:success: True, reward:-2", 'listed- action-(\'pick\', toy_type: "black"), observation:success: False, reward:-2', 'listed- action-(\'pick\', toy_type: "red"), observation:success: True, reward:-1', "listed- action-('navigate', location: 4), observation:success: False, reward:-1", "listed- action-('place', ), observation:success: True, reward:15"]
+
+total rewards:35
+This is internal environment information not allowed for decision making only for debug
+
+state:[robot location:2, toys_location:{'green': 4, 'blue': 3, 'black': 4, 'red': 2}, toys_reward:{'green': 40, 'blue': 20, 'black': 15, 'red': 15},holding_toy:False]
+
+log:
+["listed- action-('navigate', location: 2), observation:success: True, reward:-1", 'listed- action-(\'pick\', toy_type: "green"), observation:success: False, reward:-2', 'listed- action-(\'pick\', toy_type: "black"), observation:success: False, reward:-2', "listed- action-('navigate', location: 0), observation:success: True, reward:-1", "listed- action-('navigate', location: 0), observation:success: False, reward:-2", 'listed- action-(\'pick\', toy_type: "blue"), observation:success: False, reward:-2', 'listed- action-(\'pick\', toy_type: "green"), observation:success: True, reward:-1', "listed- action-('navigate', location: 4), observation:success: True, reward:-1", "listed- action-('place', ), observation:success: True, reward:40", "listed- action-('navigate', location: 1), observation:success: True, reward:-1", "listed- action-('navigate', location: 1), observation:success: False, reward:-2", 'listed- action-(\'pick\', toy_type: "black"), observation:success: True, reward:-1', "listed- action-('navigate', location: 4), observation:success: True, reward:-1", "listed- action-('place', ), observation:success: True, reward:15", "listed- action-('navigate', location: 2), observation:success: True, reward:-1"]
+
+total rewards:37
+This is internal environment information not allowed for decision making only for debug
+
+state:[robot location:3, toys_location:{'green': 4, 'blue': 3, 'black': 4, 'red': 0}, toys_reward:{'green': 40, 'blue': 15, 'black': 15, 'red': 20},holding_toy:False]
+
+log:
+["listed- action-('navigate', location: 2), observation:success: True, reward:-1", 'listed- action-(\'pick\', toy_type: "green"), observation:success: True, reward:-1', "listed- action-('navigate', location: 4), observation:success: True, reward:-1", "listed- action-('place', ), observation:success: True, reward:40", "listed- action-('navigate', location: 0), observation:success: False, reward:-2", "listed- action-('navigate', location: 0), observation:success: True, reward:-1", 'listed- action-(\'pick\', toy_type: "blue"), observation:success: False, reward:-2', 'listed- action-(\'pick\', toy_type: "black"), observation:success: False, reward:-2', "listed- action-('navigate', location: 1), observation:success: False, reward:-1", "listed- action-('navigate', location: 1), observation:success: False, reward:-2", 'listed- action-(\'pick\', toy_type: "blue"), observation:success: False, reward:-2', 'listed- action-(\'pick\', toy_type: "black"), observation:success: True, reward:-1', "listed- action-('navigate', location: 4), observation:success: True, reward:-1", "listed- action-('place', ), observation:success: True, reward:15", "listed- action-('navigate', location: 3), observation:success: True, reward:-1"]
+
+total rewards:37
+Average Rewards of all experiments: 34.3
