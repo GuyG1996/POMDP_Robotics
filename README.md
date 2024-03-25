@@ -6,18 +6,25 @@ Every afternoon, a mother returns from work, picks up her baby from daycare, and
 
 ## How to Run
 
-1. Extract and place `my_control.py` and `my_experiment.py` in the `task3_env/scripts` directory.
-2. Extract and place `CMakeLists.txt` file and replace yours inside the `task3_env` directory.
-3. Build the code using `catkin_make`.
-4. Open a terminal and run the following command to start the Gazebo simulator:
-    roslaunch task3_env task3_env.launch
+1. Extract and place `Main` folder in your catkin_workspace.
+2. Build the code using `catkin_make`.
+3. Open a terminal and run the following command to start the Gazebo simulator:
+   ```
+    roslaunch task3_env task3_env.
+    ```
 5. Open another terminal and run the following command to initiate the experiment:
+   ```
     rosrun task3_env my_experiment.py > shell.txt 2>&1
+   ```
 
 ## Additional Information
 
-- **Experiment Execution:** Running `rosrun task3_env my_experiment.py` initiates an experiment consisting of 10 runs of picking balls.
-
+- **Experiment Execution:**
+- Running the following command initiates an experiment consisting of 10 runs of picking balls.
+  ```
+  rosrun task3_env my_experiment.py
+  ```
+  
 - **Output Files:**
 - `shell.txt`: Contains the shell commands and output of the experiment.
 - `experiment_output.txt`: Stores data from all experiments, including the average rewards achieved by the robot.
